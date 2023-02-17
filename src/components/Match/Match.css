@@ -1,0 +1,46 @@
+.Match {
+  height: 70px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 25px 15px;
+  font-size: 14px;
+}
+
+.Match:nth-child(odd) {
+  background-color: #f6f7f7;
+}
+
+.match-date {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.home {
+  justify-content: flex-end;
+}
+
+.country-flag {
+  width: 53px;
+  height: 37px;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 16px;
+}
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}

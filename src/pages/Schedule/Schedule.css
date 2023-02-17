@@ -1,0 +1,120 @@
+.Schedule {
+  display: flex;
+  justify-content: center;
+
+  color: #4b5c68;
+}
+
+.schedule {
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+}
+
+table tr {
+  display: flex;
+  align-items: center;
+}
+
+.table-head {
+  font-weight: bold;
+  line-height: 40px;
+  height: 40px;
+  text-align: left;
+  font-size: 12px;
+  background-color: #e4edf2;
+}
+
+.matches-table tbody tr {
+  height: 70px;
+}
+
+.matches-table tbody tr:not(:nth-last-child(1)) {
+  border-bottom: 1px solid #e4edf2;
+}
+
+.matches-table tr:nth-child(even) {
+  background-color: #f6f7f7;
+}
+
+.matches-table th:nth-child(1),
+.matches-table td:nth-child(1) {
+  padding-left: 15px;
+  margin-right: 70px;
+  text-align: right;
+}
+
+.matches-table th:nth-child(2),
+.matches-table td:nth-child(2) {
+  flex: 2.5;
+}
+
+.matches-table th:nth-child(3),
+.matches-table td:nth-child(3),
+.matches-table th:nth-child(5),
+.matches-table td:nth-child(5) {
+  flex: 4;
+  min-width: 250px;
+}
+
+.matches-table th:nth-child(3),
+.matches-table td:nth-child(3) {
+  text-align: right;
+}
+
+.matches-table th:nth-child(4),
+.matches-table td:nth-child(4) {
+  text-align: center;
+
+  flex: 1;
+  min-width: 90px;
+}
+
+@media (max-width: 1000px) {
+  .matches-table td:nth-child(3),
+  .matches-table th:nth-child(3),
+  .matches-table th:nth-child(5),
+  .matches-table td:nth-child(5) {
+    flex: 4;
+
+    min-width: 170px;
+  }
+
+  .matches-table th:nth-child(4),
+  .matches-table td:nth-child(4) {
+    min-width: 70px;
+  }
+}
+
+@media (max-width: 750px) {
+  .matches-table th:nth-child(2),
+  .matches-table td:nth-child(2) {
+    display: none;
+  }
+  .matches-table th:nth-child(4),
+  .matches-table td:nth-child(4) {
+    min-width: 70px;
+  }
+  .matches-table th:nth-child(1),
+  .matches-table td:nth-child(1) {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .matches-table th:nth-child(1),
+  .matches-table td:nth-child(1) {
+    display: none;
+  }
+
+  .matches-table td:nth-child(3),
+  .matches-table th:nth-child(3),
+  .matches-table th:nth-child(5),
+  .matches-table td:nth-child(5) {
+    flex: 2;
+  }
+
+  .matches-table th:nth-child(4),
+  .matches-table td:nth-child(4) {
+    max-width: 55px;
+  }
+}
